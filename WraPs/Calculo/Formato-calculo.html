@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculos Matematicos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script3.js"></script>
+</head>
+<body>
+   <div class="container" style="text-align:center ; width:380px">
+    <h3>Tu credito al Instante</h3><br>
+    
+    <button onclick="calcular()" class="btn btn-success">Calcular tu crédito</button><br><br>
+
+    <div id="resultado" class="pantalla"></div><br>
+    <div id="resultado1" class="pantalla"></div>
+    <!--
+        Estructura para la impresion directa de la pagina
+         javascript:window.print():
+         Método de impresión de ventana.Impresión de página en JavaScript con una instruccion sencilla en JavaScript 
+         que se utiliza para imprimir el contenido de las páginas web.En definitiva El método print() nos imprime el contenido de la ventana actual. 
+          Básicamente abre el cuadro de diálogo Imprimir que le permite elegir entre varias opciones de impresión
+
+    -->
+    <button class="btn btn-secondary" type="button" onclick="javascript:window.print()">Imprimir</button>
+    
+   </div> 
+</body>
+</html>

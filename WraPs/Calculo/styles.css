@@ -1,0 +1,19 @@
+.pantalla{
+
+background-color: #cccccc;
+border-bottom:  5px solid #5ca86f;
+font: normal bold 18px;
+color: green;
+letter-spacing: -1px;
+text-align: center;
+text-transform: uppercase;
+border-radius:10px ;
+box-shadow: 4px 0px 2px #5ca86f;
+}
+
+h3{
+    color: green;
+    text-align: center;
+    letter-spacing: -2px;
+
+}
