@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+h4 {
+    color: green;
+    letter-spacing: 0.7rem;
+    font-size: 39px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.post-it {
+
+    width: 16.62rem;
+    height: 15rem;
+    position: relative;
+    background-color: #ffa;
+    margin: 30px auto;
+    padding: 50px;/*un elemento contenido dentro de otro, se comportará como un margen*/
+    border-radius: 0 0 0 30px/45px;
+    box-shadow: 
+    inset 0 40px 40px rgb(0, 0, 0, 0.2),
+    inset 0 25px 10px rgb(0, 0, 0, 0.2),
+     0 5px 6px 5px rgb(0, 0, 0, 0.2);
+
+    font-family: 'Permanent Marker', cursive;
+    font-size: 19px;
+
+}
