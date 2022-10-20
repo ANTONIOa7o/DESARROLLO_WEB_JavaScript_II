@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for anidado en if</title>
+</head>
+
+<body>
+    <!--
+        j ="6";
+        k=6;
+        Divisores de un numero %divisor === 0 ;true
+    -->
+    <h2>Divisibles del 1 al 20</h2>
+    <script>
+        for (var numero = 0; numero <= 20; numero++) {
+            document.write("Probando numeros: " + numero + "<br>");
+            for (var divisor = 1; divisor <= numero; divisor++) {
+                if (numero % divisor == 0) {
+                    document.write("Es divisible por: " + divisor+"<br>");
+                }
+            }
+            document.write("-----------------------;" + "<br>")
+        }
+        //21
+    </script>
+</body>
+
+</html>
