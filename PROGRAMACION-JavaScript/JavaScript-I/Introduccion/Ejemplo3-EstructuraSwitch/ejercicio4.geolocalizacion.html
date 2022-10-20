@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocalizacion</title>
+    <link rel="stylesheet" href="css/styles4.css">
+    <script src="js/script4.js"></script>
+    <link rel="shortcut icon" href="images/brujula.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+</head>
+
+<body onload=" mostrarMapa()">
+    <!-- onload-> La ejecucion de la funcion será detonada por la propia carga de la pagina.-->
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Ubicacion Empresa <img src="images/ubicacion-del-mapa.png" alt=""></h5>
+                <p class="card-text">Direccion de la Empresa.</p>
+                <p class="card-text"><small class="text-muted">Codigo Postal </small></p>
+                <a class="btn btn-outline-danger" href="">Volver a Inicio</a>
+            </div>
+          <div id="resultado">
+            <!--Vamos a soltar el mapa-->
+          </div>
+          
+        </div>
+    </div>
+</body>
+
+</html>

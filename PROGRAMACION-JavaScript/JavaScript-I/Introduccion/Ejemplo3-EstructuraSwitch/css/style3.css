@@ -1,0 +1,11 @@
+/*
+RECORDAD:El uso del id,tanto en js, como en css, que me permite acceder en ambos contextos
+a Html
+*/
+
+#resultado{
+    background-color: black;
+    color: #ADFF2F;
+    font-family: 'Nova Mono', monospace;
+    border-right: 18px solid gainsboro;
+}
