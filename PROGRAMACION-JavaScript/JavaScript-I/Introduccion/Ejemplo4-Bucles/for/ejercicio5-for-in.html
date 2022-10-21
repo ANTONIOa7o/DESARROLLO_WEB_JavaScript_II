@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for in</title>
+</head>
+
+<body>
+    <!--
+                    =========
+                    for in
+                    =========
+        *Entendida como una estructura mas especifica del for que nos peremite
+        recorrer PROPIEDADES de un objetos. 
+        *Se ejecuta en accion parecida a otros lengujes, así como a otras estructuras como
+        foreach(exclusivo de Array)
+        *Nos permite un acceso directo,a los nombres de las propiedades del objeto, sin duda
+        a su naturaleza de bucle. 
+        * La condicion del bucle la generá la propia 'estructura de la variable' y se ejecuta
+        por cada elemento de dicha variable
+        *Sintaxis:
+        for (var propiedad in objeto){
+            1.codigo a iterar
+            2.propiedad actual-real 
+            3.salidas de la propiedad
+
+        }
+Ejemplo: Recorrido de variable de los meses del año y su propiedad(dias)
+    -->
+    <script>
+        //Dos estrutructuras de asigancion de una variable a un conjunto de valores(propiedades:valor)
+        /*  var años = new Años = []; */
+        var meses = {
+            enero: 31,
+            febrero: (28,29),
+            marzo: 31,
+            abril: 30,
+            mayo: 31,
+            junio: 30,
+            julio: 31,
+            agosto: 31,
+
+        };
+
+        /*   
+        Accedemos a las propiedades directas de la variableas
+          for (var mesesAño in meses) {
+    
+                document.write(mesesAño + "<br>"); */
+        //El ultimo elemento de la iteracion será agosto
+
+
+        //Vamos a acceder a propiedades del objeto, o tambien al valor
+
+        for (var mesesAño in meses) {
+
+            document.write(" El mes: " + mesesAño + "y tiene: " + meses[mesesAño] + " dias"+ "<br>")
+        }
+
+    </script>
+
+
+
+
+</body>
+
+</html>

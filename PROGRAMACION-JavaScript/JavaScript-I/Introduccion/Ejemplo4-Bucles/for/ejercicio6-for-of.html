@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for of</title>
+</head>
+<body>
+    <!--
+                    ========
+                    for of
+                    =======
+            
+            Una necesidad al igual que el for in,mas hacia estructuras iterables de ARRAY de objeto.
+            Responderá, Resolvera, el bucle recorriendo el conjunto de datos,elemento, colecciones(objetos).
+            Su mision principal será la iteracion sobre cualquiera de los elementos de una coleccion
+            que tenga la propiedad
+
+            Ejemplo:
+            Recorrido lista de nombres
+    -->
+    
+    <div id="tabla"></div>
+<script>
+
+ var alumnos=["Victor","Manolita","Carmen","Irene","Salvador","Luis"];
+
+ for (var venganito of alumnos) {
+
+    var todos = " <div> "+   venganito  +"</div>";
+    document.getElementById('tabla').innerHTML += venganito+"<br>"
+    
+ }
+
+
+</script>
+   
+    <script>
+
+    </script>
+</body>
+</html>
