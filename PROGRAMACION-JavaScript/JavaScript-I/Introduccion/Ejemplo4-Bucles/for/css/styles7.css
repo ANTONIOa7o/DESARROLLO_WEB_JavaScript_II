@@ -1,0 +1,38 @@
+button {
+
+    text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: #7f8c8d;
+    padding: 8px 20px;
+    transition: all 0.2s ease-in-out;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 100px;
+    margin: 10px 5px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+
+    /*
+  Distintos clientes trasladarle la llamada al atributo animacion */
+  -webkit-transition: all 0.2s ease-in-out;
+    -ms-transicion:all 0.2s ease-in-out;
+    -moz-transtion: all 0.2s ease-in-out;
+
+}
+
+.azul {
+    background-color: #3498db;
+    box-shadow: 0px 5px 0px 0px #298089;
+}
+
+.azul:hover {
+    background: #39a0e5;
+}
+
+.rojo {
+    background-color: #e74c3c;
+    box-shadow: 0px 5px 0px 0px #c0392b;
+}
