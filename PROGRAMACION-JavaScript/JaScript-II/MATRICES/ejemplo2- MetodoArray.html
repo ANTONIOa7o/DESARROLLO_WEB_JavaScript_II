@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos Array</title>
+</head>
+<body>
+    <script>
+
+        var valores= [true, 5,'hola',7,'adios',false];//Cantidad importe de datos
+
+        var arrayTexto= new Array();
+        var arrayNumeros= new Array();
+        var arrayBuleano= new Array();
+
+//6.Metodo .push como agregador de elemento, pero inyectando al final 
+
+for (const item of valores) {
+    if(typeof(item) == "string"){
+        arrayTexto.push(item);
+
+    }else if(typeof(item)=='number'){
+        arrayNumeros.push(item);
+
+    }else if(typeof(item)=='boolean'){
+        arrayBuleano.push(item);
+    }
+    
+} 
+console.log(arrayTexto);
+console.log(arrayNumeros);
+console.log(arrayBuleano);
+
+    </script>
+</body>
+</html>

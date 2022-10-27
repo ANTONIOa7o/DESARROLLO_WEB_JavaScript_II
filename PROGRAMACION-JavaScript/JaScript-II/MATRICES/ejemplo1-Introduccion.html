@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrices .- Array</title>
+
+    <!--
+                        ============
+                          MATRICES
+                        ============
+
+Def: Parte de un conjunto de elementos, colocados* de forma adyacente*, que en ocasiones
+podremos encontrarlos en la memoria* adyacente o no. Que podremos acceder a todos estos
+elementos através de un solo nombre. Directamente aportara la ventaja sino que ademas
+garantiza la independencia de los propios elementos.
+Tenemos ante nosotros una forma eficaz de agrupar datos de manera ordena, tanto en acceso como
+en disponibidad
+Referencias:
+        1. TODO ELEMENTOD DE UNA MATRIZ, LLEVA ASOCIADO -un indice-
+        2.EL PRIMER ELEMENTO DE UNA MATRIZ, SU POSICION EMPIEZA EN 0
+
+tipos de Matrices:
+        1.Segun su estabilidad en el tamaño
+            -Tamaños fijos ========>ESTATICA
+            -Cambios en su tamaños =>DINAMICA
+        2.Segun su dimension
+            - Una sola dimension un grupo de elementos
+
+Propiedad de referencia:
+        .lenght: siempre nos va a ofrecer  el tamaño de dicho array, ed: nº de elementos 
+        
+        
+        Ejemplo segun directiva for
+        for (let index = 0; index < array.length; index++) {
+        const element = array[index];
+       
+    } 
+-->
+    <script>
+        /* Ejemplo de variable creando un objto var fecha = new Date(); */
+        var numero = new Array(1, 2, 3, 4, 5, 6, 7); // Array asignado a un objeto, dichos elementos son propiedad del objeto
+        // var numero1 = [1,2,3,4,5,6,7] Array directo, y aqui si tenenos carga de memoria adyacente
+
+        //Recorrido de array
+        for (let i = 0; i < numero.length; i++) {
+            console.log(numero[i]);
+
+        }
+        //for of
+        for (const i of numero) {
+            console.log(i)
+        }
+
+        // for in
+        for (const i in numero) {
+            console.log(i);// si accedemos a cosole.log(numero[i]), traera el elemento, si llamamos directamenta a la constante i
+                            // accedemos al indice del elemento 
+
+        }
+        /*
+        METODOS AL OBJECT ARRAY
+        */
+
+        //1.- Array orden inverso
+        document.write("Array invertido- " + numero.reverse()+ "<br>");
+
+        //2. Array ascendente
+        document.write("Array invertido- " + numero.sort()+ "<br>");
+
+        //3. Establecer el caracter de muestra de los datos
+        document.write("Array invertido- " + numero.join('-')+ "<br>");
+
+        //4. Accesos o muestra a partir de un dato
+        document.write("Array invertido- " + numero.slice(4)+ "<br>"); 
+
+        //5. Miscelanea
+        // a. Dinamica y naturaleza distinta
+        var letras =['a','b','c','d',8,true]
+        document.write("Array invertido- " + numero.concat(letras)+ "<br>");
+
+        //b. Dinamica y distinto sino ademas conmutativa
+        document.write("Array invertido- " + letras.concat(numero)+ "<br>");
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

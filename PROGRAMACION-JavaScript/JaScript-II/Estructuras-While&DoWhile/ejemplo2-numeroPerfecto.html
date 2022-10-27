@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero Perfecto</title>
+    <!--Será aquel que es igual a la suma de sus divisores , con resto exacto
+    ejemplo, 6 es nº perfecto, sus divisores con resto exact0 son el 1,2,3 donde su suma es 6
+Recurda: uso de while, for y if
+
+a)Calcula los numeros perfectos hasta el 100 
+b)Chalenger=> Calcula el el primer nº primo a partir(que sigue) del nº 20
+-->
+    <script>
+        var numero = 1;
+        while (numero <= 100) {
+
+            var suma = 0;
+            for (let divisor = 1; divisor < numero; divisor++) {
+                if (numero % divisor == 0) {
+                    suma += divisor
+                }
+            }
+            if (suma == numero) {
+                document.write("El numero " + numero + " Es perfecto" +"<br>")
+            }
+
+
+            numero++
+        }
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
