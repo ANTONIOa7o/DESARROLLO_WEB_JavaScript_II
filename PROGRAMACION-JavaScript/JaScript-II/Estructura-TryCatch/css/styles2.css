@@ -1,0 +1,13 @@
+#paraPegar{
+    width: 100%;
+    height: 300px;
+}
+
+.centrar{
+    margin: 0 auto;
+    text-align: center;
+    width: 32rem;
+}
+.alert{
+    margin-top: 4px;
+}
